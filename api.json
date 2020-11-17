@@ -23,6 +23,15 @@
             "fotos": null
         },
         {
+            "id": "darkcoffee",
+            "nome": "DarkCoffee",
+            "usuario_id": "luis@luis.com",
+            "preco": "$99",
+            "vendido": "false",
+            "descricao": "Esse é um café forte",
+            "fotos": null
+        },
+        {
             "id": "coffeeday",
             "nome": "CoffeeDay",
             "usuario_id": "luis@luis.com",

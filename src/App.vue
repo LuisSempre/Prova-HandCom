@@ -41,11 +41,11 @@ ul {
 
 body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
-  color: gray;
+  color:#036635;
 }
 
 a {
-  color: gray;
+  color:#036635;
   text-decoration: none;
 }
 
@@ -57,7 +57,7 @@ img {
 .btn {
   display: block;
   padding: 10px 30px;
-   background: gray;
+   background:  #036635;
   border-radius: 4px;
   color: #fff;
   text-align: center;
