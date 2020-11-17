@@ -24,7 +24,11 @@ npm run lint
 npm install -g json-server 
 ```
 ```
-json-server db.json
+json-server *.json
+```
+### Install Axios
+```
+npm install axios
 ```
 
 ### Customize configuration
