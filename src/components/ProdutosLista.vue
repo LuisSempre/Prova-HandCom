@@ -10,19 +10,32 @@
 </template>
 
 <script>
+import { api } from "@/services.js";
+import { serialize } from "@/helpers.js";
+
 export default {
   data() {
     return {
-      produtos: null
+      produtos: null,
+      produtosPorPagina: 9
     };
+  },
+  computed: {
+    url() {
+      const query = serialize(this.$route.query);
+      return `/produto?_limit=${this.produtosPorPagina}${query}`;
+    }
   },
   methods: {
     getProdutos() {
-      fetch("http://localhost:3000/produto")
-        .then(response => response.json())
-        .then(response => {
-          this.produtos = response;
-        });
+      api.get(this.url).then(response => {
+        this.produtos = response.data;
+      });
+    }
+  },
+  watch: {
+    url() {
+      this.getProdutos();
     }
   },
   created() {
