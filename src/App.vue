@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-    <TheHeader/>
+    <TheHeader />
     <main id="main">
       <transition mode="out-in">
-        <router-view/>
+        <router-view />
       </transition>
     </main>
-    <TheFooter/>
+    <TheFooter />
   </div>
 </template>
 <script>

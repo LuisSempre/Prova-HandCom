@@ -1,10 +1,10 @@
 <template>
   <ul v-if="paginasTotal > 1">
-    <router-link :to="{query: query(1)}"></router-link>
+    <router-link :to="{ query: query(1) }"></router-link>
     <li v-for="pagina in paginas" :key="pagina">
-      <router-link :to="{query: query(pagina)}">{{pagina}}</router-link>
+      <router-link :to="{ query: query(pagina) }">{{ pagina }}</router-link>
     </li>
-    <router-link :to="{query: query(paginasTotal)}">></router-link>
+    <router-link :to="{ query: query(paginasTotal) }">></router-link>
   </ul>
 </template>
 <script>
@@ -69,7 +69,7 @@ li a {
 
 li a.router-link-exact-active,
 li a:hover {
-  background:#036635; 
+  background: #036635;
   color: #fff;
 }
 </style>

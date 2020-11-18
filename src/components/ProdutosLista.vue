@@ -35,7 +35,7 @@ import { api } from "@/services.js";
 import { serialize } from "@/helpers.js";
 
 export default {
-    name: "ProdutosLista",
+  name: "ProdutosLista",
   components: {
     ProdutosPaginar,
   },

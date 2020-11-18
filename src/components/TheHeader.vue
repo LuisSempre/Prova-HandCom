@@ -2,15 +2,24 @@
   <header>
     <nav>
       <router-link to="/" class="logo">
+        <img src="@/assets/coffee.svg" alt="Coffee" />
       </router-link>
-      <router-link class="btn" to="/login">Vender / Login</router-link>
+      <router-link v-if="$store.state.login" class="btn" to="/usuario">{{
+        nome
+      }}</router-link>
+      <router-link v-else class="btn" to="/login">Vender / Login</router-link>
     </nav>
   </header>
 </template>
 
 <script>
 export default {
-  name: "TheHeader"
+  name: "TheHeader",
+  computed: {
+    nome() {
+      return this.$store.state.usuario.nome.replace(/ .*/, "");
+    },
+  },
 };
 </script>
 

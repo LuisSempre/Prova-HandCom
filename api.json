@@ -1,7 +1,7 @@
 {
     "usuario": [
         {
-            "id": "08954675697",
+            "id": "luis@luis.com",
             "email": "luis@luis.com",
             "nome": "Luis Lucas",
             "senha": "123",
@@ -10,7 +10,18 @@
             "numero": "12",
             "estado": "MG",
             "cidade": "Juiz de fora"
-        }
+        },
+        {
+          "id": "lucas@lucas.com",
+          "email": "lucas@lucas.com",
+          "nome": "Lucas da Silva",
+          "senha": "123",
+          "rua": "Rua Logo Ali",
+          "cep": "12345678",
+          "numero": "12",
+          "estado": "MG",
+          "cidade": "Juiz de fora"
+      }
     ],
     "produto": [
         {

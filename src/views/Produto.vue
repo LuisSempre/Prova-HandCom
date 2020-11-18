@@ -3,18 +3,18 @@
     <div v-if="produto" class="produto">
       <ul class="fotos" v-if="produto.fotos">
         <li v-for="(foto, index) in produto.fotos" :key="index">
-          <img :src="foto.src" :alt="foto.titulo">
+          <img :src="foto.src" :alt="foto.titulo" />
         </li>
       </ul>
       <div class="info">
-        <h1>{{produto.nome}}</h1>
-        <p class="preco">{{produto.preco | numeroPreco}}</p>
-        <p class="descricao">{{produto.descricao}}</p>
+        <h1>{{ produto.nome }}</h1>
+        <p class="preco">{{ produto.preco | numeroPreco }}</p>
+        <p class="descricao">{{ produto.descricao }}</p>
         <button class="btn" v-if="produto.vendido === 'false'">Comprar</button>
         <button v-else class="btn" disabled>Produto Vendiro</button>
       </div>
     </div>
-    <PaginaCarregando v-else/>
+    <PaginaCarregando v-else />
   </section>
 </template>
 
@@ -26,19 +26,19 @@ export default {
   props: ["id"],
   data() {
     return {
-      produto: null
+      produto: null,
     };
   },
   methods: {
     getProduto() {
-      api.get(`/produto/${this.id}`).then(response => {
+      api.get(`/produto/${this.id}`).then((response) => {
         this.produto = response.data;
       });
-    }
+    },
   },
   created() {
     this.getProduto();
-  }
+  },
 };
 </script>
 
