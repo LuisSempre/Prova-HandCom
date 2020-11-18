@@ -53,7 +53,7 @@ export default {
 }
 
 .preco {
-  color: #e80;
+  color: #5c2e00;
   font-weight: bold;
   font-size: 1.5rem;
   margin-bottom: 40px;
