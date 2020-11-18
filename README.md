@@ -24,7 +24,7 @@ npm run lint
 npm install -g json-server 
 ```
 ```
-json-server *.json
+json-server api.json
 ```
 ### Install Axios
 ```

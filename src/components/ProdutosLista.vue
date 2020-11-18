@@ -3,51 +3,68 @@
     <div v-if="produtos && produtos.length" class="produtos">
       <div class="produto" v-for="produto in produtos" :key="produto.id">
         <router-link to="/">
-          <img v-if="produto.fotos" :src="produto.fotos[0].src" :alt="produto.fotos[0].titulo">
-          <p class="preco">{{produto.preco}}</p>
-          <h2 class="titulo">{{produto.nome}}</h2>
-          <p>{{produto.descricao}}</p>
+          <img
+            v-if="produto.fotos"
+            :src="produto.fotos[0].src"
+            :alt="produto.fotos[0].titulo"
+          />
+          <p class="preco">{{ produto.preco }}</p>
+          <h2 class="titulo">{{ produto.nome }}</h2>
+          <p>{{ produto.descricao }}</p>
         </router-link>
       </div>
+      <ProdutosPaginar
+        :produtosTotal="produtosTotal"
+        :produtosPorPagina="produtosPorPagina"
+      />
     </div>
     <div v-else-if="produtos && produtos.length === 0">
-      <p class="sem-resultados">Busca sem resultados. Tente buscar outro termo.</p>
+      <p class="sem-resultados">
+        Busca sem resultados. Tente buscar outro termo.
+      </p>
     </div>
   </section>
 </template>
 
 <script>
+import ProdutosPaginar from "@/components/ProdutosPaginar.vue";
 import { api } from "@/services.js";
 import { serialize } from "@/helpers.js";
 
 export default {
+  name: "ProdutosLista",
+    components: {
+    ProdutosPaginar,
+  },
   data() {
     return {
       produtos: null,
-      produtosPorPagina: 9
+      produtosPorPagina: 3,
+      produtosTotal: 0,
     };
   },
   computed: {
     url() {
       const query = serialize(this.$route.query);
       return `/produto?_limit=${this.produtosPorPagina}${query}`;
-    }
+    },
   },
   methods: {
     getProdutos() {
-      api.get(this.url).then(response => {
+      api.get(this.url).then((response) => {
+        this.produtosTotal = Number(response.headers["x-total-count"]);
         this.produtos = response.data;
       });
-    }
+    },
   },
   watch: {
     url() {
       this.getProdutos();
-    }
+    },
   },
   created() {
     this.getProdutos();
-  }
+  },
 };
 </script>
 
@@ -89,7 +106,7 @@ export default {
 }
 
 .preco {
-  color: #5c2e00;;
+  color: #5c2e00;
   font-weight: bold;
 }
 

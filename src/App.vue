@@ -91,7 +91,7 @@ textarea {
   box-shadow: 0 4px 8px rgba(30, 60, 90, 0.1);
   transition: all 0.3s;
   font-size: 1rem;
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   margin-bottom: 15px;
 }
 
@@ -101,7 +101,6 @@ textarea:hover,
 textarea:focus {
   outline: none;
   box-shadow: 0 6px 12px rgba(30, 60, 90, 0.2);
-  border-color: #87f;
+  border-color: #036635;
 }
-
 </style>
