@@ -21,6 +21,7 @@ export default {
 
 <style scoped>
 h1 {
+  color: #036635;
   margin-top: 40px;
   font-size: 2rem;
   text-align: center;

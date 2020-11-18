@@ -33,7 +33,7 @@ import { serialize } from "@/helpers.js";
 
 export default {
   name: "ProdutosLista",
-    components: {
+  components: {
     ProdutosPaginar,
   },
   data() {

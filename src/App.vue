@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <TheHeader/>
+    <TheHeader />
     <main id="main">
-      <router-view/>
+      <router-view />
     </main>
-    <TheFooter/>
+    <TheFooter />
   </div>
 </template>
 
@@ -15,8 +15,8 @@ import TheFooter from "@/components/TheFooter.vue";
 export default {
   components: {
     TheHeader,
-    TheFooter
-  }
+    TheFooter,
+  },
 };
 </script>
 
@@ -41,11 +41,11 @@ ul {
 
 body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
-  color:#036635;
+  color: #036635;
 }
 
 a {
-  color:#036635;
+  color: #036635;
   text-decoration: none;
 }
 
@@ -57,7 +57,7 @@ img {
 .btn {
   display: block;
   padding: 10px 30px;
-   background:  #036635;
+  background: #036635;
   border-radius: 4px;
   color: #fff;
   text-align: center;
