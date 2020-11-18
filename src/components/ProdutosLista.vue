@@ -35,7 +35,7 @@ import { api } from "@/services.js";
 import { serialize } from "@/helpers.js";
 
 export default {
-  name: "ProdutosLista",
+    name: "ProdutosLista",
   components: {
     ProdutosPaginar,
   },
@@ -60,7 +60,7 @@ export default {
           this.produtosTotal = Number(response.headers["x-total-count"]);
           this.produtos = response.data;
         });
-      }, 1100);
+      }, 1500);
     },
   },
   watch: {
