@@ -1,170 +1,196 @@
 {
-    "usuario": [
-        {
-            "id": "luis@luis.com",
-            "email": "luis@luis.com",
-            "nome": "Luis Lucas",
-            "senha": "123",
-            "rua": "Rua Logo Ali",
-            "cep": "12345678",
-            "numero": "12",
-            "estado": "MG",
-            "cidade": "Juiz de fora"
-        },
-        {
-          "id": "lucas@lucas.com",
-          "email": "lucas@lucas.com",
-          "nome": "Lucas da Silva",
-          "senha": "123",
-          "rua": "Rua Logo Ali",
-          "cep": "12345678",
-          "numero": "12",
-          "estado": "MG",
-          "cidade": "Juiz de fora"
-      }
-    ],
-    "produto": [
-        {
-            "id": "darkcoffee",
-            "nome": "DarkCoffee",
-            "usuario_id": "luis@luis.com",
-            "preco": "99",
-            "vendido": "false",
-            "descricao": "Esse é um café forte",
-            "fotos": null
-        },
-        {
-            "id": "darkcoffee",
-            "nome": "DarkCoffee",
-            "usuario_id": "luis@luis.com",
-            "preco": "99",
-            "vendido": "false",
-            "descricao": "Esse é um café forte",
-            "fotos": null
-        },
-        {
-            "id": "darkcoffee",
-            "nome": "DarkCoffee",
-            "usuario_id": "luis@luis.com",
-            "preco": "99",
-            "vendido": "false",
-            "descricao": "Esse é um café forte",
-            "fotos": null
-        },
-        {
-            "id": "darkcoffee",
-            "nome": "DarkCoffee",
-            "usuario_id": "luis@luis.com",
-            "preco": "99",
-            "vendido": "false",
-            "descricao": "Esse é um café forte",
-            "fotos": null
-        },
-        {
-            "id": "darkcoffee",
-            "nome": "DarkCoffee",
-            "usuario_id": "luis@luis.com",
-            "preco": "99",
-            "vendido": "false",
-            "descricao": "Esse é um café forte",
-            "fotos": null
-        },
-        {
-            "id": "darkcoffee",
-            "nome": "DarkCoffee",
-            "usuario_id": "luis@luis.com",
-            "preco": "99",
-            "vendido": "false",
-            "descricao": "Esse é um café forte",
-            "fotos": null
-        },        {
-            "id": "darkcoffee",
-            "nome": "DarkCoffee",
-            "usuario_id": "luis@luis.com",
-            "preco": "99",
-            "vendido": "false",
-            "descricao": "Esse é um café forte",
-            "fotos": null
-        },        {
-            "id": "darkcoffee",
-            "nome": "DarkCoffee",
-            "usuario_id": "luis@luis.com",
-            "preco": "99",
-            "vendido": "false",
-            "descricao": "Esse é um café forte",
-            "fotos": null
-        },
-        {
-            "id": "darkcoffee",
-            "nome": "DarkCoffee",
-            "usuario_id": "luis@luis.com",
-            "preco": "99",
-            "vendido": "false",
-            "descricao": "Esse é um café forte",
-            "fotos": null
-        },
-        {
-            "id": "coffeeday",
-            "nome": "CoffeeDay",
-            "usuario_id": "luis@luis.com",
-            "preco": "79",
-            "vendido": "false",
-            "descricao": "Esse é um café medio",
-            "fotos": null
-        },
-        {
-            "id": "darkcoffee",
-            "nome": "DarkCoffee",
-            "usuario_id": "luis@luis.com",
-            "preco": "99",
-            "vendido": "false",
-            "descricao": "Esse é um café forte",
-            "fotos": null
-        },
-        {
-            "id": "coffeeday",
-            "nome": "CoffeeDay",
-            "usuario_id": "luis@luis.com",
-            "preco": "79",
-            "vendido": "false",
-            "descricao": "Esse é um café medio",
-            "fotos": null
-        },
-        {
-            "id": "darkcoffee",
-            "nome": "DarkCoffee",
-            "usuario_id": "luis@luis.com",
-            "preco": "99",
-            "vendido": "false",
-            "descricao": "Esse é um café forte",
-            "fotos": null
-        },
-        {
-            "id": "coffeeday",
-            "nome": "CoffeeDay",
-            "usuario_id": "luis@luis.com",
-            "preco": "79",
-            "vendido": "false",
-            "descricao": "Esse é um café medio",
-            "fotos": null
-        },
-        {
-            "id": "darkcoffee",
-            "nome": "DarkCoffee",
-            "usuario_id": "luis@luis.com",
-            "preco": "99",
-            "vendido": "false",
-            "descricao": "Esse é um café forte",
-            "fotos": null
-        },
-        {
-            "id": "coffeeday",
-            "nome": "CoffeeDay",
-            "usuario_id": "luis@luis.com",
-            "preco": "79",
-            "vendido": "false",
-            "descricao": "Esse é um café medio",
-            "fotos": null
-        }
-    ]
+  "usuario": [
+    {
+      "id": "luis@luis.com",
+      "email": "luis@luis.com",
+      "nome": "Luis Lucas",
+      "senha": "123",
+      "rua": "Rua Logo Ali",
+      "cep": "12345678",
+      "numero": "12",
+      "estado": "MG",
+      "cidade": "Juiz de fora"
+    },
+    {
+      "id": "lucas@lucas.com",
+      "email": "lucas@lucas.com",
+      "nome": "Lucas da Silva",
+      "senha": "123",
+      "rua": "Rua Logo Ali",
+      "cep": "12345678",
+      "numero": "12",
+      "estado": "MG",
+      "cidade": "Juiz de fora"
+    },
+    {
+      "id": "luis@r.com",
+      "nome": "",
+      "email": "luis@r.com",
+      "senha": "1234",
+      "cep": "",
+      "rua": "",
+      "numero": "",
+      "bairro": "",
+      "cidade": "",
+      "estado": ""
+    },
+    {
+      "id": "artur@silva.com",
+      "nome": "Artur Silva",
+      "email": "artur@silva.com",
+      "senha": "123",
+      "cep": "36072595",
+      "rua": "Rua Lourdes do Prado Oliveira",
+      "numero": "131",
+      "bairro": "Barão do Retiro",
+      "cidade": "Juiz de Fora",
+      "estado": "MG"
+    }
+  ],
+  "produto": [
+    {
+      "id": "darkcoffee",
+      "nome": "DarkCoffee",
+      "usuario_id": "luis@luis.com",
+      "preco": "99",
+      "vendido": "false",
+      "descricao": "Esse é um café forte",
+      "fotos": null
+    },
+    {
+      "id": "darkcoffee",
+      "nome": "DarkCoffee",
+      "usuario_id": "luis@luis.com",
+      "preco": "99",
+      "vendido": "false",
+      "descricao": "Esse é um café forte",
+      "fotos": null
+    },
+    {
+      "id": "darkcoffee",
+      "nome": "DarkCoffee",
+      "usuario_id": "luis@luis.com",
+      "preco": "99",
+      "vendido": "false",
+      "descricao": "Esse é um café forte",
+      "fotos": null
+    },
+    {
+      "id": "darkcoffee",
+      "nome": "DarkCoffee",
+      "usuario_id": "luis@luis.com",
+      "preco": "99",
+      "vendido": "false",
+      "descricao": "Esse é um café forte",
+      "fotos": null
+    },
+    {
+      "id": "darkcoffee",
+      "nome": "DarkCoffee",
+      "usuario_id": "luis@luis.com",
+      "preco": "99",
+      "vendido": "false",
+      "descricao": "Esse é um café forte",
+      "fotos": null
+    },
+    {
+      "id": "darkcoffee",
+      "nome": "DarkCoffee",
+      "usuario_id": "luis@luis.com",
+      "preco": "99",
+      "vendido": "false",
+      "descricao": "Esse é um café forte",
+      "fotos": null
+    },
+    {
+      "id": "darkcoffee",
+      "nome": "DarkCoffee",
+      "usuario_id": "luis@luis.com",
+      "preco": "99",
+      "vendido": "false",
+      "descricao": "Esse é um café forte",
+      "fotos": null
+    },
+    {
+      "id": "darkcoffee",
+      "nome": "DarkCoffee",
+      "usuario_id": "luis@luis.com",
+      "preco": "99",
+      "vendido": "false",
+      "descricao": "Esse é um café forte",
+      "fotos": null
+    },
+    {
+      "id": "darkcoffee",
+      "nome": "DarkCoffee",
+      "usuario_id": "luis@luis.com",
+      "preco": "99",
+      "vendido": "false",
+      "descricao": "Esse é um café forte",
+      "fotos": null
+    },
+    {
+      "id": "coffeeday",
+      "nome": "CoffeeDay",
+      "usuario_id": "luis@luis.com",
+      "preco": "79",
+      "vendido": "false",
+      "descricao": "Esse é um café medio",
+      "fotos": null
+    },
+    {
+      "id": "darkcoffee",
+      "nome": "DarkCoffee",
+      "usuario_id": "luis@luis.com",
+      "preco": "99",
+      "vendido": "false",
+      "descricao": "Esse é um café forte",
+      "fotos": null
+    },
+    {
+      "id": "coffeeday",
+      "nome": "CoffeeDay",
+      "usuario_id": "luis@luis.com",
+      "preco": "79",
+      "vendido": "false",
+      "descricao": "Esse é um café medio",
+      "fotos": null
+    },
+    {
+      "id": "darkcoffee",
+      "nome": "DarkCoffee",
+      "usuario_id": "luis@luis.com",
+      "preco": "99",
+      "vendido": "false",
+      "descricao": "Esse é um café forte",
+      "fotos": null
+    },
+    {
+      "id": "coffeeday",
+      "nome": "CoffeeDay",
+      "usuario_id": "luis@luis.com",
+      "preco": "79",
+      "vendido": "false",
+      "descricao": "Esse é um café medio",
+      "fotos": null
+    },
+    {
+      "id": "darkcoffee",
+      "nome": "DarkCoffee",
+      "usuario_id": "luis@luis.com",
+      "preco": "99",
+      "vendido": "false",
+      "descricao": "Esse é um café forte",
+      "fotos": null
+    },
+    {
+      "id": "coffeeday",
+      "nome": "CoffeeDay",
+      "usuario_id": "luis@luis.com",
+      "preco": "79",
+      "vendido": "false",
+      "descricao": "Esse é um café medio",
+      "fotos": null
+    }
+  ]
 }
