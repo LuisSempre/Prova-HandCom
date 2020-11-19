@@ -10,7 +10,7 @@ import UsuarioCompras from "@/views/usuario/UsuarioCompras"
 import UsuarioEditar from "@/views/usuario/UsuarioEditar"
 
 
-Vue.use(VueRouter);
+Vue.use(VueRouter)
 
 const routes = [
   {
@@ -55,11 +55,11 @@ const routes = [
       }
     ]  
   },
-];
+]
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
   routes,
-});
+})
 
 export default router;

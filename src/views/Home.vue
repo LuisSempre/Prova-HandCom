@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import ProdutosBuscar from "@/components/ProdutosBuscar.vue";
-import ProdutosLista from "@/components/ProdutosLista.vue";
+import ProdutosBuscar from "@/components/ProdutosBuscar"
+import ProdutosLista from "@/components/ProdutosLista"
 
 export default {
   name: "home",
@@ -16,7 +16,7 @@ export default {
     ProdutosBuscar,
     ProdutosLista
   }
-};
+}
 </script>
 
 <style scoped>

@@ -24,7 +24,7 @@ export default {
       return {
         ...this.$route.query,
         _page: pagina,
-      };
+      }
     },
   },
   computed: {
@@ -49,7 +49,7 @@ export default {
       return total !== Infinity ? Math.ceil(total) : 0;
     },
   },
-};
+}
 </script>
 
 <style>

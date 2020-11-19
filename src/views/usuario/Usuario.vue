@@ -19,11 +19,11 @@ export default {
   name: "Usuario",
   methods: {
     deslogar() {
-      this.$store.dispatch("deslogarUsuario");
-      this.$router.push("/login");
+      this.$store.dispatch("deslogarUsuario")
+      this.$router.push("/login")
     }
   }
-};
+}
 </script>
 
 <style scoped>

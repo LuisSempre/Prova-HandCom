@@ -23,7 +23,7 @@
 export default {
   name: "ProdutoItem",
   props: ["produto"],
-};
+}
 </script>
 
 <style scoped>

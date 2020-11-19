@@ -30,9 +30,9 @@
 </template>
 
 <script>
-import ProdutosPaginar from "@/components/ProdutosPaginar.vue";
-import { api } from "@/services.js";
-import { serialize } from "@/helpers.js";
+import ProdutosPaginar from "@/components/ProdutosPaginar"
+import { api } from "@/services"
+import { serialize } from "@/helpers"
 
 export default {
   name: "ProdutosLista",
@@ -44,12 +44,12 @@ export default {
       produtos: null,
       produtosPorPagina: 9,
       produtosTotal: 0,
-    };
+    }
   },
   computed: {
     url() {
-      const query = serialize(this.$route.query);
-      return `/produto?_limit=${this.produtosPorPagina}${query}`;
+      const query = serialize(this.$route.query)
+      return `/produto?_limit=${this.produtosPorPagina}${query}`
     },
   },
   methods: {
@@ -57,9 +57,9 @@ export default {
       this.produtos = null;
       window.setTimeout(() => {
         api.get(this.url).then((response) => {
-          this.produtosTotal = Number(response.headers["x-total-count"]);
+          this.produtosTotal = Number(response.headers["x-total-count"])
           this.produtos = response.data;
-        });
+        })
       }, 1500);
     },
   },
@@ -71,7 +71,7 @@ export default {
   created() {
     this.getProdutos();
   },
-};
+}
 </script>
 
 <style scoped>

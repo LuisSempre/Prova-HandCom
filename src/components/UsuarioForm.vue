@@ -25,8 +25,8 @@
 </template>
 
 <script>
-import { mapFields } from "@/helpers.js";
-import { getCep } from "@/services.js";
+import { mapFields } from "@/helpers"
+import { getCep } from "@/services"
 
 export default {
 
@@ -56,11 +56,11 @@ export default {
           this.bairro = response.data.bairro;
           this.estado = response.data.uf;
           this.cidade = response.data.localidade;
-        });
+        })
       }
     }
   }
-};
+}
 </script>
 
 <style scoped>

@@ -17,7 +17,7 @@
   </form>
 </template>
 <script>
-import { api } from "@/services.js";
+import { api } from "@/services"
 
 export default {
   name: "ProdutoAdicionar",
@@ -29,20 +29,20 @@ export default {
         descricao: "",
         fotos: null
       }
-    };
+    }
   },
   methods: {
     formatarProduto() {
-      this.produto.usuario_id = this.$store.state.usuario.id;
+      this.produto.usuario_id = this.$store.state.usuario.id
     },
     adicionarProduto() {
       this.formatarProduto();
       api.post("/produto", this.produto).then(() => {
-        this.$store.dispatch("getUsuarioProdutos");
-      });
+        this.$store.dispatch("getUsuarioProdutos")
+      })
     }
   }
-};
+}
 </script>
 
 <style scoped>

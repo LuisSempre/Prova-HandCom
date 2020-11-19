@@ -10,7 +10,7 @@
 <script>
 export default {
   name: "PaginaCarregando",
-};
+}
 </script>
 
 <style scoped>

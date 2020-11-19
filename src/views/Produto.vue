@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import { api } from "@/services.js";
+import { api } from "@/services"
 
 export default {
   name: "Produtos",
@@ -32,14 +32,14 @@ export default {
   methods: {
     getProduto() {
       api.get(`/produto/${this.id}`).then((response) => {
-        this.produto = response.data;
+        this.produto = response.data
       });
     },
   },
   created() {
     this.getProduto();
   },
-};
+}
 </script>
 
 <style scoped>

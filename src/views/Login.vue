@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import LoginCriar from "@/components/LoginCriar.vue";
+import LoginCriar from "@/components/LoginCriar"
 
 export default {
   name: "Login",
@@ -29,15 +29,15 @@ export default {
         email: "",
         senha: "",
       },
-    };
+    }
   },
   methods: {
     logar() {
-      this.$store.dispatch("getUsuario", this.login.email);
-      this.$router.push({ name: "usuario" });
+      this.$store.dispatch("getUsuario", this.login.email)
+      this.$router.push({ name: "usuario" })
     },
   },
-};
+}
 </script>
 
 <style scoped>

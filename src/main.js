@@ -1,22 +1,22 @@
-import Vue from "vue";
-import App from "./App.vue";
-import router from "./router";
-import store from "./store";
-import PaginaCarregando from "@/components/PaginaCarregando";
+import Vue from "vue"
+import App from "./App.vue"
+import router from "./router"
+import store from "./store"
+import PaginaCarregando from "@/components/PaginaCarregando"
 
-Vue.config.productionTip = false;
+Vue.config.productionTip = false
 
-Vue.component("PaginaCarregando", PaginaCarregando);
+Vue.component("PaginaCarregando", PaginaCarregando)
 
 Vue.filter("numeroPreco", valor => {
-  valor = Number(valor);
+  valor = Number(valor)
   if (!isNaN(valor)) {
-    return valor.toLocaleString("de-DE", {
+    return valor.toLocaleString("pt-BR", {
       style: "currency",
-      currency: "EUR"
+      currency: "BRL"
     })
   } else {
-    return "";
+    return ""
   }
 });
 
@@ -24,4 +24,4 @@ new Vue({
   router,
   store,
   render: h => h(App)
-}).$mount("#app");
+}).$mount("#app")

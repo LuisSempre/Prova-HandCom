@@ -1,7 +1,7 @@
-import Vue from "vue";
-import Vuex from "vuex";
-import { api } from "@/services.js";
-Vue.use(Vuex);
+import Vue from "vue"
+import Vuex from "vuex"
+import { api } from "@/services"
+Vue.use(Vuex)
 
 export default new Vuex.Store({
   strict: true,
@@ -65,8 +65,8 @@ export default new Vuex.Store({
         bairro: "",
         cidade: "",
         estado: ""
-      });
-      context.commit("UPDATE_LOGIN", false);
+      })
+      context.commit("UPDATE_LOGIN", false)
     }
   }
 });

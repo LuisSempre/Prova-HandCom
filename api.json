@@ -193,12 +193,12 @@
       "fotos": null
     },
     {
-      "nome": "CoffeeNight",
-      "preco": "1000",
-      "descricao": "Esse é um café final.",
+      "nome": "CoffeeV",
+      "preco": "700",
+      "descricao": "Café V.",
       "fotos": null,
-      "usuario_id": "artur@silva.com",
-      "id": "d2eTiwZ"
+      "usuario_id": "",
+      "id": "WfN3pbz"
     }
   ]
 }
