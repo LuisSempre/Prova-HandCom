@@ -191,6 +191,14 @@
       "vendido": "false",
       "descricao": "Esse é um café medio",
       "fotos": null
+    },
+    {
+      "nome": "CoffeeNight",
+      "preco": "1000",
+      "descricao": "Esse é um café final.",
+      "fotos": null,
+      "usuario_id": "artur@silva.com",
+      "id": "d2eTiwZ"
     }
   ]
 }
