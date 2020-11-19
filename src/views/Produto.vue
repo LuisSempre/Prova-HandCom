@@ -10,7 +10,12 @@
         <h1>{{ produto.nome }}</h1>
         <p class="preco">{{ produto.preco | numeroPreco }}</p>
         <p class="descricao">{{ produto.descricao }}</p>
-        <button class="btn" v-if="produto.vendido === 'false'">Comprar</button>
+        <transition mode="out-in" v-if="produto.vendido === 'false'">
+          <button class="btn" v-if="!finalizar" @click="finalizar = true">
+            Comprar
+          </button>
+          <FinalizarCompra v-else :produto="produto" />
+        </transition>
         <button v-else class="btn" disabled>Produto Vendido</button>
       </div>
     </div>
@@ -19,27 +24,32 @@
 </template>
 
 <script>
-import { api } from "@/services"
+import { api } from "@/services.js";
+import FinalizarCompra from "@/components/FinalizarCompra.vue";
 
 export default {
   name: "Produtos",
   props: ["id"],
+  components: {
+    FinalizarCompra,
+  },
   data() {
     return {
       produto: null,
+      finalizar: false,
     };
   },
   methods: {
     getProduto() {
       api.get(`/produto/${this.id}`).then((response) => {
-        this.produto = response.data
+        this.produto = response.data;
       });
     },
   },
   created() {
     this.getProduto();
   },
-}
+};
 </script>
 
 <style scoped>
@@ -53,7 +63,7 @@ export default {
 }
 
 .preco {
-  color: #5c2e00;
+  color: #e80;
   font-weight: bold;
   font-size: 1.5rem;
   margin-bottom: 40px;

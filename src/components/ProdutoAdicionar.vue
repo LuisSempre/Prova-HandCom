@@ -2,7 +2,7 @@
   <form class="adicionar-produto">
     <label for="nome">Nome</label>
     <input id="nome" name="nome" type="text" v-model="produto.nome" />
-    <label for="preco">Preço</label>
+    <label for="preco">Preço (R$)</label>
     <input id="preco" name="preco" type="number" v-model="produto.preco" />
     <label for="fotos">Fotos</label>
     <input id="fotos" name="fotos" type="file" ref="fotos" />
@@ -16,6 +16,7 @@
     />
   </form>
 </template>
+
 <script>
 import { api } from "@/services"
 
@@ -27,21 +28,22 @@ export default {
         nome: "",
         preco: "",
         descricao: "",
-        fotos: null
-      }
+        fotos: null,
+        vendido: "false",
+      },
     }
   },
   methods: {
     formatarProduto() {
-      this.produto.usuario_id = this.$store.state.usuario.id
+      this.produto.usuario_id = this.$store.state.usuario.id;
     },
     adicionarProduto() {
       this.formatarProduto();
       api.post("/produto", this.produto).then(() => {
         this.$store.dispatch("getUsuarioProdutos")
       })
-    }
-  }
+    },
+  },
 }
 </script>
 
@@ -56,8 +58,4 @@ export default {
 .btn {
   grid-column: 2;
 }
-</style>
-
-
-<style>
 </style>

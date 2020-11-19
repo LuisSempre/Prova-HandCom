@@ -9,6 +9,7 @@
     <TheFooter />
   </div>
 </template>
+
 <script>
 import TheHeader from "@/components/TheHeader"
 import TheFooter from "@/components/TheFooter"
@@ -18,7 +19,7 @@ export default {
     TheHeader,
     TheFooter,
   },
-}
+};
 </script>
 
 <style>
@@ -42,11 +43,11 @@ ul {
 
 body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
-  color: #036635;
+  color: #345;
 }
 
 a {
-  color: #036635;
+  color: #345;
   text-decoration: none;
 }
 
@@ -71,6 +72,7 @@ img {
 }
 
 .btn:hover {
+  background: #036635;
   transform: scale(1.1);
 }
 
@@ -82,6 +84,10 @@ img {
 
 #main {
   flex: 1;
+}
+
+label {
+  margin-bottom: 5px;
 }
 
 input,
