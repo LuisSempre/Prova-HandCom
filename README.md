@@ -30,7 +30,10 @@ json-server api.json
 ```
 npm install axios
 ```
-
+### Install VuexMapFields
+```
+npm install --save vuex-map-fields
+```
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
