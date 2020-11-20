@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <p>Alguns direitos reservados.</p>
+    <p>© 2020 Coffee Company. Todos os direitos reservados.</p>
   </footer>
 </template>
 
