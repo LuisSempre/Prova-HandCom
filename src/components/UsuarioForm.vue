@@ -33,8 +33,8 @@
 </template>
 
 <script>
-import { mapFields } from "@/helpers.js";
-import { getCep } from "@/services.js";
+import { mapFields } from "@/helpers"
+import { getCep } from "@/services"
 
 export default {
   computed: {

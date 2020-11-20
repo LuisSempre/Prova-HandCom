@@ -20,7 +20,7 @@
 import ProdutoAdicionar from "@/components/ProdutoAdicionar"
 import ProdutoItem from "@/components/ProdutoItem"
 import { mapState, mapActions } from "vuex"
-import { api } from "@/services.js"
+import { api } from "@/services"
 
 export default {
   name: "UsuarioProdutos",
@@ -56,8 +56,8 @@ export default {
     if (this.login) {
       this.getUsuarioProdutos();
     }
-  },
-};
+  }
+}
 </script>
 
 <style scoped>

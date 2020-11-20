@@ -34,15 +34,15 @@ export default {
           bairro: this.usuario.bairro,
           cidade: this.usuario.cidade,
           estado: this.usuario.estado,
-        },
+        }
       }
-    },
+    }
   },
   methods: {
     criarTransacao() {
       return api.post("/transacao", this.compra).then(() => {
-        this.$router.push({ name: "compras" });
-      });
+        this.$router.push({ name: "compras" })
+      })
     },
     async criarUsuario() {
       try {
@@ -62,8 +62,8 @@ export default {
       } else {
         this.criarUsuario();
       }
-    },
-  },
+    }
+  }
 }
 </script>
 

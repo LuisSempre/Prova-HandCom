@@ -29,7 +29,7 @@ export default {
   },
   computed: {
     paginas() {
-      const current = Number(this.$route.query._page);
+      const current = Number(this.$route.query._page)
       const range = 9;
       const offset = Math.ceil(range / 2);
       const total = this.paginasTotal;

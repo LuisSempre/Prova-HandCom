@@ -39,7 +39,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Colors
 ```
-#036635
-#5c2e00
+#036635(green)
+#5c2e00(brown)
 ```
 

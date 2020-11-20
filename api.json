@@ -199,6 +199,15 @@
       "fotos": null,
       "usuario_id": "",
       "id": "WfN3pbz"
+    },
+    {
+      "nome": "",
+      "preco": "",
+      "descricao": "",
+      "fotos": null,
+      "vendido": "false",
+      "usuario_id": "artur@silva.com",
+      "id": "aXGLCr3"
     }
   ]
 }

@@ -30,9 +30,9 @@
 </template>
 
 <script>
-import ProdutosPaginar from "@/components/ProdutosPaginar";
-import { api } from "@/services";
-import { serialize } from "@/helpers";
+import ProdutosPaginar from "@/components/ProdutosPaginar"
+import { api } from "@/services"
+import { serialize } from "@/helpers"
 
 export default {
   name: "ProdutosLista",
@@ -70,8 +70,8 @@ export default {
   },
   created() {
     this.getProdutos();
-  },
-};
+  }
+}
 </script>
 
 <style scoped>

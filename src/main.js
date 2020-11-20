@@ -18,7 +18,7 @@ Vue.filter("numeroPreco", valor => {
   } else {
     return ""
   }
-});
+})
 
 new Vue({
   router,

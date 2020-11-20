@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import UsuarioForm from "@/components/UsuarioForm.vue";
+import UsuarioForm from "@/components/UsuarioForm"
 
 export default {
   name: "LoginCriar",
@@ -35,12 +35,12 @@ export default {
           "getUsuario",
           this.$store.state.usuario.email
         )
-        this.$router.push({ name: "usuario" });
+        this.$router.push({ name: "usuario" })
       } catch (error) {
-        console.log(error);
+        console.log(error)
       }
-    },
-  },
+    }
+  }
 }
 </script>
 

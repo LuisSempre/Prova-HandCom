@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import UsuarioForm from "@/components/UsuarioForm";
-import { api } from "@/services";
+import UsuarioForm from "@/components/UsuarioForm"
+import { api } from "@/services"
 
 export default {
   name: "UsuarioEditar",
@@ -31,8 +31,8 @@ export default {
         .catch((error) => {
           console.log(error.response);
         })
-    },
-  },
+    }
+  }
 }
 </script>
 

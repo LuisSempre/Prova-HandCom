@@ -24,8 +24,8 @@
 </template>
 
 <script>
-import { api } from "@/services.js";
-import FinalizarCompra from "@/components/FinalizarCompra.vue";
+import { api } from "@/services"
+import FinalizarCompra from "@/components/FinalizarCompra"
 
 export default {
   name: "Produtos",
@@ -63,7 +63,7 @@ export default {
 }
 
 .preco {
-  color: #e80;
+  color: #5c2e00;
   font-weight: bold;
   font-size: 1.5rem;
   margin-bottom: 40px;
